@@ -12,6 +12,10 @@ target 'PushNotification' do
     :hermes_enabled => false
   )
 
+  pod 'RNFBMessaging', :path => '../node_modules/@react-native-firebase/messaging'
+
+  pod 'RNFBApp', :path => '../node_modules/@react-native-firebase/app'
+
   target 'PushNotificationTests' do
     inherit! :complete
     # Pods for testing
